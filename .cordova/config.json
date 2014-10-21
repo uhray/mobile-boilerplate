@@ -1,0 +1,9 @@
+{
+    "lib": {
+        "www": {
+            "id": "com.uhray.mobile-boilerplate",
+            "version": "0.0.0",
+            "uri": "url"
+        }
+    }
+}

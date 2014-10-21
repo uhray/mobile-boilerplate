@@ -26,3 +26,10 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+npm-debug.log
+platforms/*
+plugins/*
+www/bower/*
+www/cfg.min.js
+www/styles/css/*

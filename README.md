@@ -22,7 +22,10 @@ npm install -g ios-sim
 Now you can launch the application:
 
 ```
-phonegap run ios
+gulp lint   # lints
+gulp serve  # serves the www/ directory to be opening in browser
+gulp launch # launches phonegap and ios simulator
+gulp static # serves the static/ directory for static designing
 ```
 
 ### Editing

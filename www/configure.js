@@ -1,6 +1,6 @@
 require.config({
   paths : {
-    crud:           'bower/crud/crud',
+    crud:           'bower/crud/dist/crud',
     director:       'bower/director/build/director.min',
     debug:          'bower/debug/dist/debug',
     hammerjs:       'bower/hammerjs/hammer.min',

@@ -10,7 +10,7 @@ define(
 function(Director, p$home, debug, crud) {
   var debug = debug('router'),
       routes = {
-        '/'                 : p$home,
+        '/': p$home
       },
       router = new Director(routes);
 

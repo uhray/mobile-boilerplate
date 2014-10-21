@@ -1,5 +1,5 @@
 require.config({
-  paths : {
+  paths: {
     crud:           'bower/crud/dist/crud',
     director:       'bower/director/build/director.min',
     debug:          'bower/debug/dist/debug',
@@ -15,7 +15,7 @@ require.config({
     jquery:      { exports: '$' },
     director:    { exports: 'Router' }
   },
-  packages : [
+  packages: [
     { name: 'components', location: 'components' },
     { name: 'pages', location: 'pages' },
     { name: 'modules', location: 'modules' }
@@ -25,4 +25,3 @@ require.config({
 requirejs(['debug', 'router'], function(debug) {
   window.Debug = debug;  // global "Debug" because chrome overwrites "debug"
 });
-

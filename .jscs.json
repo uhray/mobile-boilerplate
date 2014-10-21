@@ -12,7 +12,8 @@
   "excludeFiles": [
     "node_modules/**",
     "www/bower/**",
-    "hooks/*",
-    "platforms/*"
+    "hooks/**",
+    "plugins/**",
+    "platforms/**"
   ]
 }

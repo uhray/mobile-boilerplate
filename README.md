@@ -1,4 +1,4 @@
-mobile-boilerplate
+UHRAY MOBILE BOILERPLATE
 ==================
 
 This is a boilerplate for use with phonegap to make mobile projects.
@@ -23,7 +23,7 @@ Now you can launch the application:
 
 ```
 gulp lint   # lints
-gulp serve  # serves the www/ directory to be opening in browser
+gulp serve  # serves the www/ directory to be opened in browser
 gulp launch # launches phonegap and ios simulator
 gulp static # serves the static/ directory for static designing
 ```

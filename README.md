@@ -1,7 +1,7 @@
 Uhray Mobile Boilerplate
 ==================
 
-This is a boilerplate for use with phonegap to make mobile projects.
+For a small set of senarios, we understand the decided advantages to producing a native mobile application. However, in general, we believe in the universal nature of web technologies, especially when software platforms like PhoneGap exist to port over many native capabilities for hybrid-app development. There is an inherent power to developing both web apps and mobile apps using the same set of web technologies (HTML, CSS, JavaScript, etc.). We believe that the slight advantages in speed and processing power of native applications will continue to diminish with time as computational power is continually commoditized. For these reasons, we developed the Uhray Mobile Boilerplate, a codebase that helps developers create hybrid mobile applications through PhoneGap(http://phonegap.com/). This Mobile Boilerplate was inspired by and constains many of the save advantages of our own [Uhray Boilerplate](https://github.com/uhray/boilerplate) for creating dynamic web applications. 
 
 ### Gettings Starting
 

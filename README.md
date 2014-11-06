@@ -1,4 +1,4 @@
-UHRAY MOBILE BOILERPLATE
+Uhray Mobile Boilerplate
 ==================
 
 This is a boilerplate for use with phonegap to make mobile projects.

@@ -22,7 +22,7 @@ npm install -g phonegap
 npm install -g ios-deploy
 npm install -g ios-sim
 
-# Launch the mobile application
+# Launch the mobile application in 1 of 3 ways
 gulp serve     # serves www directory (mobile app) for opening in browser
 gulp launch    # launches mobile applicaiton via phonegap and iOS simulator
 gulp static    # serves static directory (static app pages) for opening in browser

@@ -1,33 +1,38 @@
-mobile-boilerplate
+Uhray Mobile Boilerplate
 ==================
 
-This is a boilerplate for use with phonegap to make mobile projects.
+In certain situations (heavy graphics/rendering), we understand the potential advantages of developing native mobile applications. However, in general, we believe in the universal nature of web technologies, especially when software platforms like PhoneGap exist to port over native capabilities for hybrid-app development. There is an inherent power to developing both web apps and mobile apps using the same core set of web technologies (HTML, CSS, JavaScript, etc.). We believe that the slight advantages in speed and processing power of native applications will continue to diminish with time as computational power is continually commoditized. For these reasons, we developed the Uhray Mobile Boilerplate, a codebase that helps developers create hybrid mobile applications through [PhoneGap](http://phonegap.com/). This Mobile Boilerplate was inspired by and constains many of the save advantages of our own [Uhray Boilerplate](https://github.com/uhray/boilerplate) for creating dynamic web applications. 
 
-### Gettings Starting
+## Quick Start
 
-Try installing and launching:
+Dependencies:
+* [node](http://nodejs.org/)
+* [npm](https://www.npmjs.org/) (now comes with node)
+* [bower](http://bower.io/)
+* [gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md#getting-started)
 
-```
+```bash
+# Install the Uhray Mobile Boilerplate
+git clone https://github.com/uhray/mobile-boilerplate.git
+cd mobile-boilerplate
 npm install
-```
 
-The first time you use all the phonegap stuff, you'll need some global clis:
-
-```
+# Install the following CLIs for integrating with PhoneGap
 npm install -g phonegap
 npm install -g ios-deploy
 npm install -g ios-sim
+
+# Launch the mobile application in 1 of 3 ways
+gulp serve     # serves www directory (mobile app) for opening in browser
+gulp launch    # launches mobile applicaiton via phonegap and iOS simulator
+gulp static    # serves static directory (static app pages) for opening in browser
 ```
 
-Now you can launch the application:
+## Documentation
 
-```
-gulp lint   # lints
-gulp serve  # serves the www/ directory to be opening in browser
-gulp launch # launches phonegap and ios simulator
-gulp static # serves the static/ directory for static designing
-```
+Take a look at the [Uhray Mobile Boilerplate Docs](https://github.com/uhray/mobile-boilerplate/blob/master/doc/mobile-boilerplate.md). This documentation is bundled with the project, which makes it readily available for offline viewing and provides a useful starting point for any documentation you want to write about your mobile application.
 
-### Editing
+## Mobile Browser Compatibility
 
-All web editing should be in the [www](www) directory. It starts with a single page html file that is [www/index.html](www/index.html). This file loads [www/router.js](www/router.js) which handles the rest of the routing.
+This mobile boilerplate should be compatible with all evergreen browsers.
+

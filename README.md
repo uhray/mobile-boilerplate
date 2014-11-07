@@ -12,16 +12,17 @@ Dependencies:
 * [gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md#getting-started)
 
 ```bash
+# Install the Uhray Mobile Boilerplate
 git clone https://github.com/uhray/mobile-boilerplate.git
 cd mobile-boilerplate
 npm install
 
-# Install the following global CLIs, if this is your first time using phonegap
+# Install the following CLIs for integrating with PhoneGap
 npm install -g phonegap
 npm install -g ios-deploy
 npm install -g ios-sim
 
-# Launch your mobile application
+# Launch the mobile application
 gulp serve  # serves www/ (mobile app) directory for opening in browser
 gulp launch # launches mobile applicaiton via phonegap and iOS simulator
 gulp static # serves static/ (static app pages) directory for opening in browser

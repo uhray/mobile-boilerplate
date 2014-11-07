@@ -34,4 +34,4 @@ www/bower/*
 www/cfg.min.js
 www/styles/css/*
 .sass-cache
-.pgbomit
+www/.pgbomit

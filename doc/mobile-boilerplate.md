@@ -7,8 +7,6 @@
 * [Codebase Organization](#codebase-organization)
 
 **Backend Docs**
-* [Server Configuration](#server-configuration)
-* [API](#api)
 * [Shells](#shells)
 
 

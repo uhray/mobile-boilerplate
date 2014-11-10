@@ -395,6 +395,8 @@ Command: ```gulp launch```. This launch build is for launching the mobile applic
  3. Runs the PhoneGap build process.
  4. [After-Build Hook](https://github.com/uhray/mobile-boilerplate/blob/1abc6fd609710c2e856af2ba97ef05b27ba96fa2/hooks/after_build/optimize.sh) which minifies all JavaScript code that will be put on mobile simulator/device according to these [settings](https://github.com/uhray/mobile-boilerplate/blob/master/optimize.js).
 
+>Note: The PhoneGap build process will create a new *platforms/* directory in the root Mobile Boilerplate directory which contains all of the mobile files required for viewing your mobile application in a simulator or on a physical device.
+
 #### Lint
 
 Command: ```gulp lint```. This lint build is for linting the application's codebase for possible errors. Right now, this only runs the JavaScript linter [jscs](https://www.npmjs.org/package/jscs). See [Linting Docs](#linting) for more information.

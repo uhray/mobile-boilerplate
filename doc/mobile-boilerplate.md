@@ -113,8 +113,8 @@ www/
 ```
 
 * The [.cordova](https://github.com/uhray/mobile-boilerplate/tree/master/.cordova) directory just contains a configuration file for [Cordova](http://cordova.apache.org/), the engine that powers PhoneGap.
-* The [hooks](https://github.com/uhray/mobile-boilerplate/tree/master/hooks) directory contains scripts for customizing Cordova/PhoneGap commands. Click [here](https://github.com/uhray/mobile-boilerplate/blob/master/hooks/README.md) for more information on Hooks.  
-* The [res](https://github.com/uhray/mobile-boilerplate/tree/master/res) directory simply contains various Cordova/PhoneGap icons for a variety of mobile platforms. The Uhray Mobile Boilerplate, by default, has a *before_build* hook [script](https://github.com/uhray/mobile-boilerplate/blob/master/hooks/before_build/install_plugins.js) that will install the PhoneGap plugins listed in the [phonegap-plugins.json](https://github.com/uhray/mobile-boilerplate/blob/master/phonegap-plugins.json) file in the root directory. 
+* The [hooks](https://github.com/uhray/mobile-boilerplate/tree/master/hooks) directory contains scripts for customizing Cordova/PhoneGap commands. The Uhray Mobile Boilerplate, by default, has a *before_build* hook [script](https://github.com/uhray/mobile-boilerplate/blob/master/hooks/before_build/install_plugins.js) that will install the PhoneGap plugins listed in the [phonegap-plugins.json](https://github.com/uhray/mobile-boilerplate/blob/master/phonegap-plugins.json) file in the root directory. Click [here](https://github.com/uhray/mobile-boilerplate/blob/master/hooks/README.md) for more information on Hooks.  
+* The [res](https://github.com/uhray/mobile-boilerplate/tree/master/res) directory simply contains various Cordova/PhoneGap icons for a variety of mobile platforms. 
 * Lastly, the [config.xml](https://github.com/uhray/mobile-boilerplate/blob/master/www/config.xml) defines all of your application's PhoneGap configurations. 
 
 <br>

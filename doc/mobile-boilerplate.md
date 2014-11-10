@@ -74,7 +74,7 @@ www/
 
 #### Frontend Organization
 
-The real meat of the Uhray Mobile Boilerplate takes place in the top-level [www/](https://github.com/uhray/mobile-boilerplate/tree/master/www) directory. It all starts with the [router.js](https://github.com/uhray/boilerplate/blob/master/app/frontend/router.js) file. After the server sends over a shell to the frontend, the *router.js* file handles which application page should be loaded based on the URL. Each page can utilize components, images, modules or styles. More on this later.
+The real meat of the Uhray Mobile Boilerplate takes place in the top-level [www/](https://github.com/uhray/mobile-boilerplate/tree/master/www) directory. From the shell, [configure.js](https://github.com/uhray/mobile-boilerplate/blob/master/www/configure.js) is loaded via [require.js](http://requirejs.org/) which then calls the [router.js](https://github.com/uhray/boilerplate/blob/master/app/frontend/router.js) file. The *router.js* file handles which application page should be loaded based on the URL. Each page can utilize components, images, modules or styles. More on this later.
 
 ```
 www/

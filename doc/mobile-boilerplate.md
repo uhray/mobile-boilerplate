@@ -179,7 +179,7 @@ The best part about doing static development this way is that when you're ready 
 
 #### Viewing Static Pages
 
-In the [static](https://github.com/uhray/mobile-boilerplate/tree/master/static) directory, there is an [index.js](https://github.com/uhray/mobile-boilerplate/blob/master/static/index.js) file. This is basically the same thing as the static.js static server file from the Uhray Web Boilerplate (https://github.com/uhray/boilerplate/blob/master/doc/boilerplate.md#viewing-static-pages). It's setup to display a list of all your static pages. You can launch the static server by running the following command from the Uhray Web Boilerplate root directory:
+In the [static](https://github.com/uhray/mobile-boilerplate/tree/master/static) directory, there is an [index.js](https://github.com/uhray/mobile-boilerplate/blob/master/static/index.js) file. This is basically the same thing as the static.js static server file from the [Uhray Web Boilerplate](https://github.com/uhray/boilerplate/blob/master/doc/boilerplate.md#viewing-static-pages). It's setup to display a list of all your static pages. You can launch the static server by running the following command from the Uhray Web Boilerplate root directory:
 
 ``` gulp static```
 

@@ -282,7 +282,7 @@ The [images](https://github.com/uhray/mobile-boilerplate/tree/master/www/images)
 
 ## Ractive-plugins
 
-The [ractive-plugins](../app/frontend/ractive-plugins) directory is broken down into the different types of plugins. Pay attention to the information in each type of plugin's README.md and follow the [ractive documentation](http://docs.ractivejs.org/latest/plugins) on plugins.
+The [ractive-plugins](../www/ractive-plugins) directory is broken down into the different types of plugins. Pay attention to the information in each type of plugin's README.md and follow the [ractive documentation](http://docs.ractivejs.org/latest/plugins) on plugins.
 
 ## Modules
 

@@ -16,7 +16,7 @@
 * [Routing](#routing)
 * [Styles](#styles)
 * [Images](#images)
-* [Components](#components)
+* [Ractive-Plugins](#ractive-plugins)
 * [Modules](#modules)
 
 **Other Docs**
@@ -280,19 +280,9 @@ The [images](https://github.com/uhray/mobile-boilerplate/tree/master/www/images)
 
 >Note: All images in this directory will be publicly hosted with your application.
 
-## Components
+## Ractive-plugins
 
-#### Basics
-In many cases, you may want to encapsulate some HTML and JavaScript code into a widget that can be easily reused on the frontend within Ractive templates -- think of things like a toggle button, modal, custom select dropdown, slideshow, text editor, etc. Thanks to [Ractive Components](http://docs.ractivejs.org/latest/components), you can achieve this functionality with relative ease. 
-
-#### Setup
-
-Within the Uhray Boilerplate, we setup components in a similar way to pages. Components are stored in the frontend [components](https://github.com/uhray/mobile-boilerplate/tree/master/www/components) directory. Each component is a directory which contains two files:
-
- 1. Ractive Template
- 2. Ractive JavaScript File
-
-See the Uhray Web Boilerplate Docs to understand via [example](https://github.com/uhray/boilerplate/blob/master/doc/boilerplate.md#components) how these two component files work together to form reusable widgets. 
+The [ractive-plugins](../app/frontend/ractive-plugins) directory is broken down into the different types of plugins. Pay attention to the information in each type of plugin's README.md and follow the [ractive documentation](http://docs.ractivejs.org/latest/plugins) on plugins.
 
 ## Modules
 

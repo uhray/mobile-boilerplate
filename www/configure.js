@@ -22,8 +22,7 @@ require.config({
     debug:          'bower/debug/dist/debug',
     hammerjs:       'bower/hammerjs/hammer.min',
     ractive:        'bower/ractive/ractive',
-    rv:             'bower/rv/rv',
-
+    rv:             'bower/rv/rv'
   },
   shim: {
     debug:       { exports: 'debug' },

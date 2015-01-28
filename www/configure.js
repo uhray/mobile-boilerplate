@@ -1,4 +1,21 @@
 require.config({
+  config: {
+    loader: {
+      pages: {
+        home:         'pages/home/main'
+      },
+      components: {
+        modal:        'ractive-plugins/components/modal/main'
+      },
+      events: {
+        tap:     'bower/ractive-events-tap/ractive-events-tap',
+        touch:   'bower/ractive-touch/index'
+      },
+      modules: {
+        tools:        'modules/tools'
+      }
+    }
+  },
   paths: {
     crud:           'bower/crud/dist/crud',
     director:       'bower/director/build/director.min',
@@ -7,19 +24,13 @@ require.config({
     ractive:        'bower/ractive/ractive',
     rv:             'bower/rv/rv',
 
-    'ractive-tap':     'bower/ractive-events-tap/ractive-events-tap',
-    'ractive-touch':   'bower/ractive-touch/index'
   },
   shim: {
     debug:       { exports: 'debug' },
     jquery:      { exports: '$' },
-    director:    { exports: 'Router' }
-  },
-  packages: [
-    { name: 'components', location: 'components' },
-    { name: 'pages', location: 'pages' },
-    { name: 'modules', location: 'modules' }
-  ]
+    director:    { exports: 'Router' },
+    router:      ['loader!']
+  }
 });
 
 requirejs(['debug', 'router'], function(debug) {

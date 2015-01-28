@@ -5,7 +5,7 @@ define(
 ],
 function(Ractive, template) {
 
-  return Ractive.extend({
+  return Ractive.components.toggle = Ractive.extend({
     template: template,
 
     init: function() {

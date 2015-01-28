@@ -1,10 +1,9 @@
 define(
 [
 'ractive',
-'components/toggle/main',
 'rv!./template'
 ],
-function(Ractive, toggle, template) {
+function(Ractive, template) {
 
   return function() {
     var ractive = new Ractive({
@@ -19,9 +18,6 @@ function(Ractive, toggle, template) {
               var t = this.get('time');
               return t.getHours() + ':' + t.getMinutes() + ':' + t.getSeconds();
             }
-          },
-          components: {
-            toggle: toggle
           }
         });
 

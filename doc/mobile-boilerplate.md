@@ -12,6 +12,7 @@
 
 **Frontend Docs**
 * [Static Development](#static-development)
+* [Configuring](#configuring)
 * [Pages](#pages)
 * [Routing](#routing)
 * [Styles](#styles)
@@ -188,6 +189,14 @@ Once started, the server should log something like:
 ```21:48:47 static.1 | App listening on port 5200```
 
 Open your browser to the localhost on the specified port (i.e. ```localhost:5200```). You'll be able to see updates to any newly saved static file code simply by refreshing your browser.
+
+## Configuring
+
+Configuration is located in [www/configure.js](../www/configure.js).
+
+The frontend is configured via [requirejs](http://requirejs.org/) and is set up nicely to use the [requirejs-loader-plugin](https://github.com/uhray/requirejs-loader-plugin). If there are any questions on how to add new modules, consult either of those two links. Requirejs is very powerful and consequently very complicated, but the loader plugin is supposed to help ease some things.
+
+Also, because of the line in the configure.js file that sets the shim: `router:   ['loader!']`, all things configured with the [requirejs-loader-plugin](https://github.com/uhray/requirejs-loader-plugin) are loaded up before anything starts. This is important for things like extending Ractive.
 
 ## Pages
 

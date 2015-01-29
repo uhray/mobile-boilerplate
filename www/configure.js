@@ -5,7 +5,7 @@ require.config({
         home:         'pages/home/main'
       },
       components: {
-        modal:        'ractive-plugins/components/modal/main'
+        toggle:       'ractive-plugins/components/toggle/main'
       },
       events: {
         tap:     'bower/ractive-events-tap/ractive-events-tap',
@@ -21,6 +21,7 @@ require.config({
     director:       'bower/director/build/director.min',
     debug:          'bower/debug/dist/debug',
     hammerjs:       'bower/hammerjs/hammer.min',
+    loader:         'bower/requirejs-loader-plugin/loader',
     ractive:        'bower/ractive/ractive',
     rv:             'bower/rv/rv'
   },

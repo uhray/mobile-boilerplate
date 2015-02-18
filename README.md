@@ -30,7 +30,7 @@ gulp static    # serves static directory (static app pages) for opening in brows
 
 ## Documentation
 
-Take a look at the [Uhray Mobile Boilerplate Docs](https://github.com/uhray/mobile-boilerplate/blob/master/doc/mobile-boilerplate.md). This documentation is bundled with the project, which makes it readily available for offline viewing and provides a useful starting point for any documentation you want to write about your mobile application.
+Take a look at the [Uhray Mobile Boilerplate Docs](doc/mobile-boilerplate.md). This documentation is bundled with the project, which makes it readily available for offline viewing and provides a useful starting point for any documentation you want to write about your mobile application.
 
 ## Mobile Browser Compatibility
 

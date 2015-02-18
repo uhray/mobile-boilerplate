@@ -66,7 +66,7 @@ Unlike the [Uhray Web Boilerplate](https://github.com/uhray/boilerplate/blob/mas
 
 Shells
 
-If you do not know what shells are, see the [Uhray Web Boilerplate](https://github.com/uhray/boilerplate/blob/master/doc/boilerplate.md#shells) as a reference. Right now, the Uhray Mobile Boilerplate supports a single shell, [index.html](https://github.com/uhray/mobile-boilerplate/blob/master/www/index.html). This is the first file to get rendered and loaded up before the frontend code controls the rest of the routing, views, etc. See [Shells](#shells) for more information.
+If you do not know what shells are, see the [Uhray Web Boilerplate](https://github.com/uhray/boilerplate/blob/master/doc/boilerplate.md#shells) as a reference. Right now, the Uhray Mobile Boilerplate supports a single shell, [index.html](../www/index.html). This is the first file to get rendered and loaded up before the frontend code controls the rest of the routing, views, etc. See [Shells](#shells) for more information.
 
 ```
 www/
@@ -75,7 +75,7 @@ www/
 
 #### Frontend Organization
 
-The real meat of the Uhray Mobile Boilerplate takes place in the top-level [www/](https://github.com/uhray/mobile-boilerplate/tree/master/www) directory. From the shell, [configure.js](https://github.com/uhray/mobile-boilerplate/blob/master/www/configure.js) is loaded via [require.js](http://requirejs.org/) which then calls the [router.js](https://github.com/uhray/boilerplate/blob/master/app/frontend/router.js) file. The *router.js* file handles which application page should be loaded based on the URL. Each page can utilize components, images, modules or styles. More on this later.
+The real meat of the Uhray Mobile Boilerplate takes place in the top-level [www/](https://github.com/uhray/mobile-boilerplate/tree/master/www) directory. From the shell, [configure.js](../www/configure.js) is loaded via [require.js](http://requirejs.org/) which then calls the [router.js](https://github.com/uhray/boilerplate/blob/master/app/frontend/router.js) file. The *router.js* file handles which application page should be loaded based on the URL. Each page can utilize components, images, modules or styles. More on this later.
 
 ```
 www/
@@ -114,9 +114,9 @@ www/
 ```
 
 * The [.cordova](https://github.com/uhray/mobile-boilerplate/tree/master/.cordova) directory just contains a configuration file for [Cordova](http://cordova.apache.org/), the engine that powers PhoneGap.
-* The [hooks](https://github.com/uhray/mobile-boilerplate/tree/master/hooks) directory contains scripts for customizing Cordova/PhoneGap commands. The Uhray Mobile Boilerplate, by default, has a *before_build* hook [script](https://github.com/uhray/mobile-boilerplate/blob/master/hooks/before_build/install_plugins.js) that will install the PhoneGap plugins listed in the [phonegap-plugins.json](https://github.com/uhray/mobile-boilerplate/blob/master/phonegap-plugins.json) file in the root directory. Click [here](https://github.com/uhray/mobile-boilerplate/blob/master/hooks/README.md) for more information on Hooks.  
+* The [hooks](https://github.com/uhray/mobile-boilerplate/tree/master/hooks) directory contains scripts for customizing Cordova/PhoneGap commands. The Uhray Mobile Boilerplate, by default, has a *before_build* hook [script](../hooks/before_build/install_plugins.js) that will install the PhoneGap plugins listed in the [phonegap-plugins.json](../phonegap-plugins.json) file in the root directory. Click [here](../hooks/README.md) for more information on Hooks.  
 * The [res](https://github.com/uhray/mobile-boilerplate/tree/master/res) directory simply contains various Cordova/PhoneGap icons for a variety of mobile platforms. 
-* Lastly, the [config.xml](https://github.com/uhray/mobile-boilerplate/blob/master/www/config.xml) defines all of your application's PhoneGap configurations. 
+* Lastly, the [config.xml](../www/config.xml) defines all of your application's PhoneGap configurations. 
 
 <br>
 # BACKEND DOCS
@@ -131,7 +131,7 @@ The advantage to using shells is that you can update data on the frontend as a u
 
 #### Setup
 
-By default, the Uhray Boilerplace comes with one shell ([index.html](https://github.com/uhray/mobile-boilerplate/blob/master/www/index.html)) that sets up some basic meta tags, links 3 stylesheets, provides a container for the frontend content to be embedded, and loads the frontend JavaScript code:
+By default, the Uhray Boilerplace comes with one shell ([index.html](../www/index.html)) that sets up some basic meta tags, links 3 stylesheets, provides a container for the frontend content to be embedded, and loads the frontend JavaScript code:
 
 ```
     <script type="text/javascript" src="cordova.js"></script>
@@ -140,7 +140,7 @@ By default, the Uhray Boilerplace comes with one shell ([index.html](https://git
             data-main="configure.js"></script>
 ```
 
-The first script *cordova.js* will be a file that is constructed during the PhoneGap build process. The second script is for [require.js](http://requirejs.org/) which loads up [configure.js](https://github.com/uhray/mobile-boilerplate/blob/master/www/configure.js).
+The first script *cordova.js* will be a file that is constructed during the PhoneGap build process. The second script is for [require.js](http://requirejs.org/) which loads up [configure.js](../www/configure.js).
  
 
 <br><br>
@@ -172,7 +172,7 @@ By default, the _layout.html has 3 CSS links.
  2. HTML5 Boilerplate's main.css (cross-browser styling)
  3. Uhray Mobile Boilerplate's main.css (starting place for your styling rules)
 
-You can extend the base CSS by adding CSS/SCSS rules to the [main.scss](https://github.com/uhray/mobile-boilerplate/blob/master/www/styles/main.scss) file in the www styles directory. 
+You can extend the base CSS by adding CSS/SCSS rules to the [main.scss](../www/styles/main.scss) file in the www styles directory. 
 
 >Note: The difference in file extensions (*.css from _layout.html* vs *.scss from frontend styles directory*) will be resolved during the application's build process. By default, all SCSS files are converted to CSS files with the same base filename. These converted CSS files will be placed within a /css directory within the /styles directory. See [Build Options](#build-options) for additional information.
 
@@ -180,7 +180,7 @@ The best part about doing static development this way is that when you're ready 
 
 #### Viewing Static Pages
 
-In the [static](https://github.com/uhray/mobile-boilerplate/tree/master/static) directory, there is an [index.js](https://github.com/uhray/mobile-boilerplate/blob/master/static/index.js) file. This is basically the same thing as the static.js static server file from the [Uhray Web Boilerplate](https://github.com/uhray/boilerplate/blob/master/doc/boilerplate.md#viewing-static-pages). It's setup to display a list of all your static pages. You can launch the static server by running the following command from the Uhray Web Boilerplate root directory:
+In the [static](https://github.com/uhray/mobile-boilerplate/tree/master/static) directory, there is an [index.js](../static/index.js) file. This is basically the same thing as the static.js static server file from the [Uhray Web Boilerplate](https://github.com/uhray/boilerplate/blob/master/doc/boilerplate.md#viewing-static-pages). It's setup to display a list of all your static pages. You can launch the static server by running the following command from the Uhray Web Boilerplate root directory:
 
 ``` gulp static```
 
@@ -226,8 +226,8 @@ Additionally, you can also define [computed properties](http://docs.ractivejs.or
 To create a new page, you need to do several things:
 
  1. Create a new directory in the [pages](https://github.com/uhray/mobile-boilerplate/tree/master/www/pages) directory.
- 2. In this directory, create an Ractive Template (example: [template.html](https://github.com/uhray/mobile-boilerplate/blob/master/www/pages/home/template.html)).
- 3. In this directory, create an Ractive JavaScript file (example: [*main.js*](https://github.com/uhray/mobile-boilerplate/blob/master/www/pages/home/main.js)).
+ 2. In this directory, create an Ractive Template (example: [template.html](../www/pages/home/template.html)).
+ 3. In this directory, create an Ractive JavaScript file (example: [*main.js*](../www/pages/home/main.js)).
  4. Update your [frontend routes](#routing) to define which URLs should load the new page.
 
 #### Integrating MongoDB Data
@@ -237,7 +237,7 @@ When defining the data for your pages in the Ractive JavaScript file, you'll lik
 
 ## Routing
 
-The shell ([index.html](https://github.com/uhray/mobile-boilerplate/blob/master/www/index.html)) calls [configure.js](https://github.com/uhray/mobile-boilerplate/blob/master/www/configure.js) to set up frontend dependences for [require.js](http://requirejs.org/). This then calls [router.js](https://github.com/uhray/mobile-boilerplate/blob/master/www/router.js) which determines what frontend page should be loaded into the shell based on the URL. These routes are setup using [director](https://github.com/flatiron/director). 
+The shell ([index.html](../www/index.html)) calls [configure.js](../www/configure.js) to set up frontend dependences for [require.js](http://requirejs.org/). This then calls [router.js](../www/router.js) which determines what frontend page should be loaded into the shell based on the URL. These routes are setup using [director](https://github.com/flatiron/director). 
 
 Below is a barebones example of the *router.js* file.
 ```
@@ -257,7 +257,7 @@ By default, this *router.js* file only has one route set up. It shows that given
 
 ## Styles
 
-The [styles](https://github.com/uhray/mobile-boilerplate/tree/master/www/styles) directory is meant to house all of your application's custom styling rules. In addition to regular CSS files, the Uhray Mobile Boilerplate allows you to put SCSS files in this directory. SCSS allows you to do [really cool things](http://sass-lang.com/guide) like use variables in CSS. By default, the [*main.scss*](https://github.com/uhray/mobile-boilerplate/blob/master/www/styles/main.scss) file is linked to all of your frontend pages and static templates, so you can simply extend this file with new CSS or SCSS styling rules. 
+The [styles](https://github.com/uhray/mobile-boilerplate/tree/master/www/styles) directory is meant to house all of your application's custom styling rules. In addition to regular CSS files, the Uhray Mobile Boilerplate allows you to put SCSS files in this directory. SCSS allows you to do [really cool things](http://sass-lang.com/guide) like use variables in CSS. By default, the [*main.scss*](../www/styles/main.scss) file is linked to all of your frontend pages and static templates, so you can simply extend this file with new CSS or SCSS styling rules. 
 
 >Note: During the build process, all SCSS files are converted to CSS files with the same base filename. Also, all CSS files are run through [autoprefixer](https://github.com/postcss/autoprefixer) which automatically adds in any missing vender prefixes (-webit, -moz, -ms). These converted CSS files will be placed within a /css directory within the /styles directory. See [Build Options](#build-options) for additional information.
 
@@ -271,7 +271,7 @@ styles/
 	new_stylesheet.scss
 ```	
 
-Next, you'll have to add a corresponding link tag to the base [_layout.html](https://github.com/uhray/mobile-boilerplate/blob/master/static/_layout.html) file for static development or the [backend shell](https://github.com/uhray/mobile-boilerplate/blob/master/www/index.html) for regular application development.
+Next, you'll have to add a corresponding link tag to the base [_layout.html](../static/_layout.html) file for static development or the [backend shell](../www/index.html) for regular application development.
 
 ```
 <link rel="stylesheet" href="/public/styles/css/new_stylesheet.css">
@@ -320,11 +320,11 @@ Uhray Boilerplate uses [bower](http://bower.io/) as a frontend package manager. 
  1. Manually edit *bower.json* and re-build your application.
  2. Run ```bower install <package-name> [--save|--save-dev]``` from the command line and re-build your application.
 
->Note: If you wish to include a GitHub module in your application, but it's not on bower, you can still include it by providing the Github HTTPS URL (with https:// replaced with git://) for the desired GitHub repository in the bower.json file as shown [here](https://github.com/uhray/mobile-boilerplate/blob/master/bower.json#L10).
+>Note: If you wish to include a GitHub module in your application, but it's not on bower, you can still include it by providing the Github HTTPS URL (with https:// replaced with git://) for the desired GitHub repository in the bower.json file as shown [here](../bower.json#L10).
 
 #### Require.js
 
-We use *require.js* as a file and module loader on the frontend. The frontend's [configure.js](https://github.com/uhray/mobile-boilerplate/blob/master/www/configure.js) file is the main configuration file for *require.js*.
+We use *require.js* as a file and module loader on the frontend. The frontend's [configure.js](../www/configure.js) file is the main configuration file for *require.js*.
 
 
 ## Linting
@@ -333,7 +333,7 @@ The Uhray Boilerplate comes with [jscs](https://www.npmjs.org/package/jscs), a J
 
 ```gulp lint```
 
-You can configure specific options for the linter in the [*.jscs.json*](https://github.com/uhray/mobile-boilerplate/blob/master/.jscs.json) file in the root Boilerplate directory. A list of available options are [here](https://github.com/jscs-dev/node-jscs#options).
+You can configure specific options for the linter in the [*.jscs.json*](../.jscs.json) file in the root Boilerplate directory. A list of available options are [here](https://github.com/jscs-dev/node-jscs#options).
 
 ## Build Options
 
@@ -377,7 +377,7 @@ Command: ```gulp launch```. This launch build is for launching the mobile applic
  1. Performs a gulp install.
  2. Converts all SCSS files to CSS files & runs [autoprefixer].
  3. Runs the PhoneGap build process.
- 4. [After-Build Hook](https://github.com/uhray/mobile-boilerplate/blob/1abc6fd609710c2e856af2ba97ef05b27ba96fa2/hooks/after_build/optimize.sh) which minifies all JavaScript code that will be put on mobile simulator/device according to these [settings](https://github.com/uhray/mobile-boilerplate/blob/master/optimize.js).
+ 4. [After-Build Hook](https://github.com/uhray/mobile-boilerplate/blob/1abc6fd609710c2e856af2ba97ef05b27ba96fa2/hooks/after_build/optimize.sh) which minifies all JavaScript code that will be put on mobile simulator/device according to these [settings](../optimize.js).
 
 >Note: The PhoneGap build process will create a new *platforms/* directory in the root Mobile Boilerplate directory which contains all of the mobile files required for viewing your mobile application in a simulator or on a physical device.
 

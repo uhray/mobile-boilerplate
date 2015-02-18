@@ -240,7 +240,8 @@ When defining the data for your pages in the Ractive JavaScript file, you'll lik
 The shell ([index.html](../www/index.html)) calls [configure.js](../www/configure.js) to set up frontend dependences for [require.js](http://requirejs.org/). This then calls [router.js](../www/router.js) which determines what frontend page should be loaded into the shell based on the URL. These routes are setup using [director](https://github.com/flatiron/director). 
 
 Below is a barebones example of the *router.js* file.
-```
+
+```js
 define(
 ['director', 'pages/home/main'],
 function(Director, p$home) {

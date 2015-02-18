@@ -75,7 +75,7 @@ www/
 
 #### Frontend Organization
 
-The real meat of the Uhray Mobile Boilerplate takes place in the top-level [www/](https://github.com/uhray/mobile-boilerplate/tree/master/www) directory. From the shell, [configure.js](../www/configure.js) is loaded via [require.js](http://requirejs.org/) which then calls the [router.js](https://github.com/uhray/boilerplate/blob/master/app/frontend/router.js) file. The *router.js* file handles which application page should be loaded based on the URL. Each page can utilize components, images, modules or styles. More on this later.
+The real meat of the Uhray Mobile Boilerplate takes place in the top-level [www/](../www) directory. From the shell, [configure.js](../www/configure.js) is loaded via [require.js](http://requirejs.org/) which then calls the [router.js](https://github.com/uhray/boilerplate/blob/master/app/frontend/router.js) file. The *router.js* file handles which application page should be loaded based on the URL. Each page can utilize components, images, modules or styles. More on this later.
 
 ```
 www/
@@ -90,7 +90,7 @@ www/
 	router.js
 ```
 
-The frontend is intentionally designed to be page-centric, meaning that code is organized and structured around each page in the web application. Inside the [pages directory](https://github.com/uhray/mobile-boilerplate/tree/master/www/pages), each page is defined as a directory itself containing 2 files (see *home* above):
+The frontend is intentionally designed to be page-centric, meaning that code is organized and structured around each page in the web application. Inside the [pages directory](../www/pages), each page is defined as a directory itself containing 2 files (see *home* above):
 
  1. Ractive Template
  2. Ractive JavaScript File
@@ -113,9 +113,9 @@ www/
 	config.xml
 ```
 
-* The [.cordova](https://github.com/uhray/mobile-boilerplate/tree/master/.cordova) directory just contains a configuration file for [Cordova](http://cordova.apache.org/), the engine that powers PhoneGap.
-* The [hooks](https://github.com/uhray/mobile-boilerplate/tree/master/hooks) directory contains scripts for customizing Cordova/PhoneGap commands. The Uhray Mobile Boilerplate, by default, has a *before_build* hook [script](../hooks/before_build/install_plugins.js) that will install the PhoneGap plugins listed in the [phonegap-plugins.json](../phonegap-plugins.json) file in the root directory. Click [here](../hooks/README.md) for more information on Hooks.  
-* The [res](https://github.com/uhray/mobile-boilerplate/tree/master/res) directory simply contains various Cordova/PhoneGap icons for a variety of mobile platforms. 
+* The [.cordova](../.cordova) directory just contains a configuration file for [Cordova](http://cordova.apache.org/), the engine that powers PhoneGap.
+* The [hooks](../hooks) directory contains scripts for customizing Cordova/PhoneGap commands. The Uhray Mobile Boilerplate, by default, has a *before_build* hook [script](../hooks/before_build/install_plugins.js) that will install the PhoneGap plugins listed in the [phonegap-plugins.json](../phonegap-plugins.json) file in the root directory. Click [here](../hooks/README.md) for more information on Hooks.  
+* The [res](../res) directory simply contains various Cordova/PhoneGap icons for a variety of mobile platforms. 
 * Lastly, the [config.xml](../www/config.xml) defines all of your application's PhoneGap configurations. 
 
 <br>
@@ -153,7 +153,7 @@ When developing mobile applications, we find it easiest to implement static fron
 
 #### Static Page Organization
 
-In the root directory of the Uhray Mobile Boilerplate, there is a [static](https://github.com/uhray/mobile-boilerplate/tree/master/static) directory.
+In the root directory of the Uhray Mobile Boilerplate, there is a [static](../static) directory.
 
 ```bash
 static/
@@ -180,7 +180,7 @@ The best part about doing static development this way is that when you're ready 
 
 #### Viewing Static Pages
 
-In the [static](https://github.com/uhray/mobile-boilerplate/tree/master/static) directory, there is an [index.js](../static/index.js) file. This is basically the same thing as the static.js static server file from the [Uhray Web Boilerplate](https://github.com/uhray/boilerplate/blob/master/doc/boilerplate.md#viewing-static-pages). It's setup to display a list of all your static pages. You can launch the static server by running the following command from the Uhray Web Boilerplate root directory:
+In the [static](../static) directory, there is an [index.js](../static/index.js) file. This is basically the same thing as the static.js static server file from the [Uhray Web Boilerplate](https://github.com/uhray/boilerplate/blob/master/doc/boilerplate.md#viewing-static-pages). It's setup to display a list of all your static pages. You can launch the static server by running the following command from the Uhray Web Boilerplate root directory:
 
 ``` gulp static```
 
@@ -200,7 +200,7 @@ Also, because of the line in the configure.js file that sets the shim: `router: 
 
 ## Pages
 
-Each page of the web application is defined in the [pages](https://github.com/uhray/mobile-boilerplate/tree/master/www/pages) directory as a directory of 2 files:
+Each page of the web application is defined in the [pages](../www/pages) directory as a directory of 2 files:
 
 1. Ractive Template
 2. Ractive JavaScript File
@@ -225,7 +225,7 @@ Additionally, you can also define [computed properties](http://docs.ractivejs.or
 
 To create a new page, you need to do several things:
 
- 1. Create a new directory in the [pages](https://github.com/uhray/mobile-boilerplate/tree/master/www/pages) directory.
+ 1. Create a new directory in the [pages](../www/pages) directory.
  2. In this directory, create an Ractive Template (example: [template.html](../www/pages/home/template.html)).
  3. In this directory, create an Ractive JavaScript file (example: [*main.js*](../www/pages/home/main.js)).
  4. Update your [frontend routes](#routing) to define which URLs should load the new page.
@@ -257,7 +257,7 @@ By default, this *router.js* file only has one route set up. It shows that given
 
 ## Styles
 
-The [styles](https://github.com/uhray/mobile-boilerplate/tree/master/www/styles) directory is meant to house all of your application's custom styling rules. In addition to regular CSS files, the Uhray Mobile Boilerplate allows you to put SCSS files in this directory. SCSS allows you to do [really cool things](http://sass-lang.com/guide) like use variables in CSS. By default, the [*main.scss*](../www/styles/main.scss) file is linked to all of your frontend pages and static templates, so you can simply extend this file with new CSS or SCSS styling rules. 
+The [styles](../www/styles) directory is meant to house all of your application's custom styling rules. In addition to regular CSS files, the Uhray Mobile Boilerplate allows you to put SCSS files in this directory. SCSS allows you to do [really cool things](http://sass-lang.com/guide) like use variables in CSS. By default, the [*main.scss*](../www/styles/main.scss) file is linked to all of your frontend pages and static templates, so you can simply extend this file with new CSS or SCSS styling rules. 
 
 >Note: During the build process, all SCSS files are converted to CSS files with the same base filename. Also, all CSS files are run through [autoprefixer](https://github.com/postcss/autoprefixer) which automatically adds in any missing vender prefixes (-webit, -moz, -ms). These converted CSS files will be placed within a /css directory within the /styles directory. See [Build Options](#build-options) for additional information.
 
@@ -285,7 +285,7 @@ Here's an introduction to source maps and a tutorial for setting everything up w
 
 ## Images
 
-The [images](https://github.com/uhray/mobile-boilerplate/tree/master/www/images) directory is where you can put all of the images used within your application. By default, we've included a favicon (*favicon.ico*) and the a hamburger icon (*hamburger.svg*) which is frequently used for mobile menus.
+The [images](../www/images) directory is where you can put all of the images used within your application. By default, we've included a favicon (*favicon.ico*) and the a hamburger icon (*hamburger.svg*) which is frequently used for mobile menus.
 
 >Note: All images in this directory will be publicly hosted with your application.
 
@@ -295,7 +295,7 @@ The [ractive-plugins](../www/ractive-plugins) directory is broken down into the 
 
 ## Modules
 
-The frontend [modules](https://github.com/uhray/mobile-boilerplate/tree/master/www/modules) directory is simply a place to put reusable JavaScript code. The use cases are virtually endless, but here's a simple example.
+The frontend [modules](../www/modules) directory is simply a place to put reusable JavaScript code. The use cases are virtually endless, but here's a simple example.
 
 See the Uhray Web Boilerplate Docs to understand via [example](https://github.com/uhray/boilerplate/blob/master/doc/boilerplate.md#components) how to effectively use modules in your frontend application code. 
 

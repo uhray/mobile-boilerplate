@@ -244,12 +244,12 @@ Below is a barebones example of the *router.js* file.
 define(
 ['director', 'pages/home/main'],
 function(Director, p$home) {
-	var routes = {
-	    '/': p$home
-	},
-        router = new Director(routes);
+  var routes = {
+        '/': p$home
+      },
+      router = new Director(routes);
 
-	router.init('/');
+  router.init('/');
 });
 ```
 
